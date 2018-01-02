@@ -64,7 +64,7 @@ class Template extends React.Component {
       <div className="blog-main">
         <Container
           style={{
-            maxWidth: rhythm(30),
+            maxWidth: rhythm(28),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
@@ -73,7 +73,7 @@ class Template extends React.Component {
         {children()}
         <Container
           style={{
-            maxWidth: rhythm(30),
+            maxWidth: rhythm(28),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >

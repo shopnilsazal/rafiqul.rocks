@@ -68,7 +68,7 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
   return (
     <Container
       style={{
-        maxWidth: rhythm(32),
+        maxWidth: rhythm(30),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >

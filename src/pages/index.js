@@ -16,7 +16,7 @@ class BlogIndex extends React.Component {
     return (
       <Container
         style={{
-          maxWidth: rhythm(30),
+          maxWidth: rhythm(28),
           padding: `0 ${rhythm(3 / 4)} ${rhythm(1.5)}`,
         }}
       >

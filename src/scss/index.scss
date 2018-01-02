@@ -22,9 +22,17 @@ a:not(.tags-item) {
   }
 }
 
+a.read-more {
+  font-family: $font-sans;
+  font-size: 0.9rem;
+}
+
 a.gatsby-resp-image-link {
   border: 0;
   box-shadow: none;
+  &:hover {
+    background: none;
+  }
 }
 
 .blog-details {
@@ -81,5 +89,13 @@ article.blog-card {
     line-height: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
+  }
+}
+
+.all-tags-container {
+  .tags-item {
+    margin-right: 10px;
+    padding: 5px 15px 4px;
+    font-size: 14px;
   }
 }

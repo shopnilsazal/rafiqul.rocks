@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const ReadMore = ({ slug }) => {
   return (
-    <Link style={{ boxShadow: 'none' }} to={slug}>
+    <Link className="read-more" style={{ boxShadow: 'none' }} to={slug}>
       Read More
       <svg
         width="13"

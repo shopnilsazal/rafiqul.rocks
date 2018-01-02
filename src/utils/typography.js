@@ -1,8 +1,6 @@
 import Typography from 'typography'
 import lincolnTheme from 'typography-theme-lincoln'
 
-lincolnTheme.baseFontSize = '20px'
-lincolnTheme.baseLineHeight = 1.6
 lincolnTheme.overrideThemeStyles = () => ({
   a: {
     boxShadow: 'none',

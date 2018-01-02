@@ -99,3 +99,19 @@ article.blog-card {
     font-size: 14px;
   }
 }
+
+.watermark-text {
+  font-size: 9.4rem;
+  text-transform: uppercase;
+  font-family: $font-sherif;
+  color: #fff;
+  top: 0;
+  font-weight: 900;
+  margin-top: calc(24px * 1.2);
+  position: fixed;
+  white-space: nowrap;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -34,6 +34,7 @@ class BlogIndex extends React.Component {
                 date={node.frontmatter.date}
                 excerpt={node.excerpt}
                 tags={node.frontmatter.tags || []}
+                read={node.timeToRead}
               />
             )
           })}

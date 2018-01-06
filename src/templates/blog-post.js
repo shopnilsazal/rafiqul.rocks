@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { Container } from 'react-responsive-grid'
 import Bio from '../components/Bio'
 import PostDetails from '../components/PostDetails'
+import PostNavigation from '../components/PostNavigation'
 import { rhythm, scale } from '../utils/typography'
 import '../scss/prism-theme.scss'
 
@@ -17,6 +18,7 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
   const description = post.excerpt
   const author = data.site.siteMetadata.author
   const siteTitle = data.site.siteMetadata.title
+  console.log('Path Context ', pathContext)
 
   const meta = [
     {
@@ -79,7 +81,10 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
         siteTitle={siteTitle}
         date={post.frontmatter.date}
         html={post.html}
+        tags={post.frontmatter.tags}
+        read={post.timeToRead}
       />
+      <PostNavigation prev={prev} next={next} />
       <Bio />
     </Container>
   )

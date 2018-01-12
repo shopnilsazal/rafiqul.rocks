@@ -11,11 +11,11 @@ const PostDetails = ({ title, siteTitle, date, html, tags, read }) => {
       <MinRead read={read} />
       <h1 className="post-title">{title}</h1>
       <PostDate date={date} />
+      <Tags tags={tags} />
       <div
         className="post-content"
         dangerouslySetInnerHTML={{ __html: html }}
       />
-      <Tags tags={tags} />
     </div>
   )
 }

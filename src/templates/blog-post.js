@@ -9,7 +9,6 @@ import { rhythm, scale } from '../utils/typography'
 import '../scss/prism-theme.scss'
 
 const BlogPost = ({ data = {}, location, pathContext }) => {
-  console.log(data)
   const { markdownRemark: post } = data
   const { next, prev } = pathContext
 
@@ -18,7 +17,6 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
   const description = post.excerpt
   const author = data.site.siteMetadata.author
   const siteTitle = data.site.siteMetadata.title
-  console.log('Path Context ', pathContext)
 
   const meta = [
     {

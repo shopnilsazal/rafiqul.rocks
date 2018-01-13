@@ -3,9 +3,9 @@ module.exports = {
     title: "Rafiqul's Blog",
     author: 'Rafiqul Hasan',
     description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    siteUrl: 'http://rafiqul.rocks/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

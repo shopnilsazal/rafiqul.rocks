@@ -17,6 +17,7 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
   const description = post.excerpt
   const author = data.site.siteMetadata.author
   const siteTitle = data.site.siteMetadata.title
+  const siteUrl = data.site.siteMetadata.siteUrl
 
   const meta = [
     {
@@ -45,7 +46,7 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
     },
     {
       name: `twitter:creator`,
-      content: `schaudustin`,
+      content: `shopnilsazal`,
     },
     {
       name: `author`,
@@ -61,7 +62,7 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
     },
     {
       name: `article:published_time`,
-      content: post.frontmatter.rawDate,
+      content: post.frontmatter.date,
     },
   ]
 
@@ -82,7 +83,12 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
         tags={post.frontmatter.tags}
         read={post.timeToRead}
       />
-      <PostNavigation prev={prev} next={next} />
+      <PostNavigation
+        prev={prev}
+        next={next}
+        link={`${siteUrl + post.frontmatter.path}`}
+        title={post.frontmatter.title}
+      />
       <Bio />
     </Container>
   )
@@ -96,6 +102,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

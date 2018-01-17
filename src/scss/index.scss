@@ -108,13 +108,13 @@ article.blog-card {
   margin-bottom: 1rem;
   margin-left: 0;
   .tags-item {
-    @include color-cloud(#eaf3fb, #006cd1);
+    @include color-cloud(#f1f1fe, #6265fe);
   }
 }
 
 .min-read-container {
   .min-read {
-    @include color-cloud(#faeff5, #e365a6);
+    @include color-cloud(#fff0f4, #fe628e);
   }
 }
 
@@ -190,7 +190,7 @@ article.blog-card {
   }
   .reading-progress {
     line {
-      stroke: #e365a6;
+      stroke: #6265fe;
       stroke-width: 3;
     }
   }

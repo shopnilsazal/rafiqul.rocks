@@ -4,7 +4,6 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { Container } from 'react-responsive-grid'
 
-import Bio from '../components/Bio'
 import PostListItem from '../components/PostListItem'
 import { rhythm } from '../utils/typography'
 
@@ -17,12 +16,11 @@ class BlogIndex extends React.Component {
       <Container
         style={{
           maxWidth: rhythm(28),
-          padding: `0 ${rhythm(3 / 4)} ${rhythm(1.5)}`,
+          padding: `0 ${rhythm(0.5)} ${rhythm(1.5)}`,
         }}
       >
         <Helmet title={siteTitle} />
         <h1 className="watermark-text">Rafiqul</h1>
-        {/* <Bio /> */}
         <div className="blog-list">
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug

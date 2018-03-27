@@ -62,12 +62,12 @@ $color-attr-name: $color-purple;
 $color-attr-value: $color-yellow;
 $color-string: $color-yellow;
 $color-char: $color-purple;
-$color-builtin: $color-purple;
+$color-builtin: $ayu-entity;
 $color-inserted: $color-purple;
 $color-entity: $color-purple;
 $color-url: $color-purple;
 $color-delimiter: $color-silver;
-$color-keyword: $color-sky;
+$color-keyword: $ayu-keyword;
 $color-atrule: $color-sky;
 $color-class-name: $color-black;
 $color-regex: $color-yellow;
@@ -77,20 +77,24 @@ $color-important: $color-yellow;
 
 pre[class*='language-'] {
   position: relative;
-  overflow: visible;
-  padding: 2.5rem 1.5rem 1.5rem;
   color: $pre-color;
   background-color: $ayu-bg;
   border-radius: 4px;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
   code[class*='language'] {
     max-height: inherit;
     height: 100%;
     display: block;
     overflow: auto;
     color: $code-color;
-    background-color: $code-bg;
   }
+}
+
+code[class*='language-'] {
+  padding: 2.5rem 1.5rem 1.5rem;
 }
 
 code[class*='language-'],
@@ -305,8 +309,12 @@ pre {
 
 .gatsby-highlight {
   position: relative;
-  margin-left: -4rem;
-  margin-right: -4rem;
+  margin-left: -3rem;
+  margin-right: -3rem;
+  @media all and (max-width: 768px) {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
   &::before,
   &::after,
   pre:before {

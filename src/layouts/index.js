@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
+import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 
 import loadWebFonts from '../services/web-fonts'
@@ -14,62 +15,11 @@ class Template extends React.Component {
 
   render() {
     const { location, children } = this.props
-    let header
-    let footer
-
-    let rootPath = `/`
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`
-    }
-
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            Rafiqul's Blog
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3 style={{ textAlign: 'center' }}>
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            Rafiqul's Blog
-          </Link>
-        </h3>
-      )
-    }
+    const resumeClassName = location.pathname == '/resume' ? 'resume' : ''
 
     return (
-      <div className="blog-main">
-        <Container
-          style={{
-            maxWidth: rhythm(28),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          {header}
-        </Container>
+      <div className={`blog-main ${resumeClassName}`}>
+        <Menu />
         {children()}
         <Container
           style={{

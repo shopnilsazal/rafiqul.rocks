@@ -11,7 +11,7 @@ const PostListItem = ({ slug, title, date, excerpt, tags, read }) => {
     <article className="blog-card">
       <MinRead read={read} />
       <Tags tags={tags} />
-      <PostTitle title={title} slug={slug} />
+      <PostTitle title={title} slug={`/${slug}`} />
       <PostDate date={date} />
       <p
         className="post-excerpt"

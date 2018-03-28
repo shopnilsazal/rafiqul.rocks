@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Rafiqul's Blog",
     author: 'Rafiqul Hasan',
+    description: 'My blog site to write something sometimes.',
     siteUrl: 'https://rafiqul.netlify.com/',
   },
   pathPrefix: '/',

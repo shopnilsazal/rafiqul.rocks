@@ -28,6 +28,7 @@
     "gatsby-transformer-remark": "^1.7.25",
     "gatsby-transformer-sharp": "^1.6.16",
     "lodash": "^4.17.4",
+    "react-disqus-comments": "^1.1.1",
     "react-responsive-grid": "^0.3.4",
     "typography-theme-lincoln": "^0.15.11",
     "webfontloader": "^1.6.28"

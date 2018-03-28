@@ -3,6 +3,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { Container } from 'react-responsive-grid'
 import PostDetails from '../components/PostDetails'
+import Disqus from '../components/Disqus'
 import PostNavigation from '../components/PostNavigation'
 import { rhythm, scale } from '../utils/typography'
 import SEO from '../components/SEO'
@@ -34,6 +35,9 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
         tags={post.frontmatter.tags}
         read={post.timeToRead}
       />
+
+      <Disqus post={post} />
+
       <PostNavigation
         prev={prev}
         next={next}

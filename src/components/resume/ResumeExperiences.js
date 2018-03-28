@@ -37,7 +37,7 @@ const ResumeExperiences = () => (
 
     <div className="content">
       <span className="date">January 2016 - September 2017</span>
-      <span className="sub-title">WordPress Developer</span>
+      <span className="sub-title">Software Developer</span>
       <span className="sub-title-sm">
         <a href="https://www.linkedin.com/company/themexpert/" target="_blank">
           ThemeXpert

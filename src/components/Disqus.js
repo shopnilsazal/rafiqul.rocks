@@ -31,8 +31,8 @@ class Disqus extends Component {
       <ReactDisqusComments
         className="post-comments"
         shortname={config.disqusShortname}
-        identifier={post.title}
-        title={post.title}
+        identifier={post.frontmatter.path}
+        title={post.frontmatter.title}
         url={url}
         onNewComment={this.notifyAboutComment}
       />

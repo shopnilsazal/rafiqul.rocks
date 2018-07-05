@@ -17,8 +17,8 @@ const ResumeSkills = () => (
           <code>Tornado</code>
           <code>Celery</code>
           <code>Scrapy</code>
+          <code>Go</code>
           <code>PHP</code>
-          <code>WordPress</code>
         </span>
       </span>
     </div>
@@ -41,15 +41,17 @@ const ResumeSkills = () => (
     </div>
 
     <div className="content">
-      <span className="sub-title">Database</span>
+      <span className="sub-title">Others</span>
       <span className="text text-column">
         <span className="text-left">
           <code>MySQL</code>
           <code>PostgreSQL</code>
+          <code>Docker</code>
         </span>
         <span className="text-right">
           <code>MongoDB</code>
           <code>Redis</code>
+          <code>Kubernetes</code>
         </span>
       </span>
     </div>

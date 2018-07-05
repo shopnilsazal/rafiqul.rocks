@@ -21,6 +21,7 @@ const ResumeExperiences = () => (
         <code> WebSocket</code>.
         <br />
         - Designing APIs and Building Microservices. <br />
+        - Lead a small team and mentor junior developers. <br />
         - Developing new features by writing clean, reusable and maintainable
         code.
         <br />

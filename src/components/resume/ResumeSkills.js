@@ -11,12 +11,10 @@ const ResumeSkills = () => (
           <code>Django</code>
           <code>DRF</code>
           <code>Flask</code>
-          <code>Sanic</code>
         </span>
         <span className="text-right">
-          <code>Tornado</code>
+          <code>Sanic</code>
           <code>Celery</code>
-          <code>Scrapy</code>
           <code>Go</code>
           <code>PHP</code>
         </span>
@@ -51,7 +49,7 @@ const ResumeSkills = () => (
         <span className="text-right">
           <code>MongoDB</code>
           <code>Redis</code>
-          <code>Kubernetes</code>
+          <code>NSQ</code>
         </span>
       </span>
     </div>

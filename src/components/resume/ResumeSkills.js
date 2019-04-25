@@ -16,7 +16,7 @@ const ResumeSkills = () => (
           <code>Sanic</code>
           <code>Celery</code>
           <code>Go</code>
-          <code>PHP</code>
+          <code>NodeJS</code>
         </span>
       </span>
     </div>
@@ -27,13 +27,11 @@ const ResumeSkills = () => (
           <code>HTML5</code>
           <code>CSS3</code>
           <code>SASS</code>
-          <code>LESS</code>
         </span>
         <span className="text-right">
           <code>JavaScript(ES6)</code>
           <code>ReactJS</code>
           <code>Redux</code>
-          <code>jQuery</code>
         </span>
       </span>
     </div>

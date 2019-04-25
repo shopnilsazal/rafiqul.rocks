@@ -27,6 +27,17 @@ const ResumeProjects = () => (
         application.
       </span>
     </div>
+    <div className="content">
+      <span className="sub-title">
+        <a href="https://github.com/shopnilsazal/checkr" target="_blank">
+          Checkr
+        </a>
+      </span>
+      <span className="text">
+        A CLI tool to check whether a package name is available on different
+        package managers.
+      </span>
+    </div>
   </div>
 )
 

@@ -37,9 +37,9 @@ const ResumeExperiences = () => (
         </a>
       </span>
       <span className="text">
-        - Designing and developing highly available and scalable backend system
-        for IoT devices. <br />- Designing and developing real-time
-        communication system with
+        - Designing and developing highly scalable backend system for IoT
+        devices. <br />- Designing and developing real-time communication system
+        with
         <code> WebSocket</code>.
         <br />
         - Lead a team of 4 and mentor junior developers. <br />- Developing new

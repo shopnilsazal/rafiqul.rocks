@@ -17,7 +17,8 @@ const ResumeExperiences = () => (
         <a href="https://beshijoss.com/" target="_blank">
           BeshiJoss
         </a>
-        , an online entertainment and event ticketing platform.
+        , an online entertainment and event ticketing platform. <br />
+        - Implementing new features to existing applications.
         <br />- <strong>Technologies:</strong> <code>Go</code>,{' '}
         <code>Echo Framework</code>, <code>ReactJS</code>, <code>Python</code>,{' '}
         <code>Django</code>, <code>PostgreSQL</code>
@@ -62,29 +63,11 @@ const ResumeExperiences = () => (
       </span>
       <span className="text">
         - Developing premium WordPress themes and plugins. <br />
-        - Developing Microservices for Email Marketing application. <br />
+        - Creating components for Page Builder.. <br />
         - Providing technical support to the customer. <br />-{' '}
         <strong>Technologies:</strong> <code>PHP</code>, <code>WordPress</code>,{' '}
         <code>ReactJS</code>, <code>Python</code>, <code>Flask</code>,{' '}
         <code>Scrapy</code>, <code>MySQL</code>, <code>MongoDB</code>
-      </span>
-    </div>
-
-    <div className="content">
-      <span className="date">September 2014 - April 2015</span>
-      <span className="sub-title">WordPress Developer</span>
-      <span className="sub-title-sm">
-        <a
-          href="https://www.linkedin.com/company/softcorp-media/"
-          target="_blank"
-        >
-          Softcorp Media
-        </a>
-      </span>
-      <span className="text">
-        - Developing and maintaining WordPress sites. <br />
-        - Improving site performance and security. <br />
-        - Managing WHM with 50+ sites. <br />
       </span>
     </div>
 

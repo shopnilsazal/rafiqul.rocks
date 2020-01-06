@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import { Container } from 'react-responsive-grid'
-
+import { graphql } from 'gatsby'
+import Menu from '../components/Menu'
 import PostListItem from '../components/PostListItem'
 import { rhythm } from '../utils/typography'
+import '../scss/index.scss'
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,12 +13,14 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <Container
+      <div
         style={{
           maxWidth: rhythm(28),
           padding: `0 ${rhythm(0.5)} ${rhythm(1.5)}`,
+          margin: '0 auto',
         }}
       >
+        <Menu />
         <Helmet title={siteTitle} />
         <h1 className="watermark-text">Rafiqul</h1>
         <div className="blog-list">
@@ -37,7 +39,7 @@ class BlogIndex extends React.Component {
             )
           })}
         </div>
-      </Container>
+      </div>
     )
   }
 }

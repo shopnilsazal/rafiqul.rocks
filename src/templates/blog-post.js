@@ -1,11 +1,10 @@
 import React from 'react'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import { Container } from 'react-responsive-grid'
+import { graphql } from 'gatsby'
+import Menu from '../components/Menu'
 import PostDetails from '../components/PostDetails'
 import Disqus from '../components/Disqus'
 import PostNavigation from '../components/PostNavigation'
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 import SEO from '../components/SEO'
 import '../scss/prism-theme.scss'
 
@@ -19,12 +18,14 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
   const siteUrl = data.site.siteMetadata.siteUrl
 
   return (
-    <Container
+    <div
       style={{
         maxWidth: rhythm(30),
         padding: `${rhythm(1.5)} ${rhythm(0.5)}`,
+        margin: '0 auto',
       }}
     >
+      <Menu />
       <SEO data={data} />
 
       <PostDetails
@@ -44,7 +45,7 @@ const BlogPost = ({ data = {}, location, pathContext }) => {
         link={`${siteUrl + post.frontmatter.path}`}
         title={post.frontmatter.title}
       />
-    </Container>
+    </div>
   )
 }
 

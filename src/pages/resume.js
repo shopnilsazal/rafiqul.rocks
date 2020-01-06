@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Container } from 'react-responsive-grid'
+import Menu from '../components/Menu'
 import ResumeContact from '../components/resume/ResumeContact'
 import ResumeAbout from '../components/resume/ResumeAbout'
 import ResumePersonal from '../components/resume/ResumePersonal'
@@ -9,17 +9,19 @@ import ResumeExperiences from '../components/resume/ResumeExperiences'
 import ResumeEducation from '../components/resume/ResumeEducation'
 import ResumeProjects from '../components/resume/ResumeProjects'
 import ResumeHobby from '../components/resume/ResumeHobby'
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 import '../scss/resume.scss'
 
 const Resume = () => {
   return (
-    <Container
+    <div
       style={{
         maxWidth: rhythm(41),
         padding: `0 ${rhythm(0.5)}`,
+        margin: '0 auto',
       }}
     >
+      <Menu />
       <Helmet title={'Resume - Rafiqul Hasan'} />
       <div className="ball-right" />
       <header>
@@ -49,7 +51,7 @@ const Resume = () => {
       <div className="bottom-ball-wrapper">
         <div className="ball-bottom" />
       </div>
-    </Container>
+    </div>
   )
 }
 

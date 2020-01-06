@@ -1,15 +1,15 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Container } from 'react-responsive-grid'
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 import Link from 'gatsby-link'
 
 const NotFound = () => {
   return (
-    <Container
+    <div
       style={{
         maxWidth: rhythm(40),
         padding: `0 ${rhythm(0.5)}`,
+        margin: '0 auto',
       }}
     >
       <Helmet title={'404 Not Found - Rafiqul Hasan'} />
@@ -29,7 +29,7 @@ const NotFound = () => {
         <h2 style={{ marginTop: 0 }}>Nothing is Found Here</h2>
         <Link to="/">wanna go home?</Link>
       </div>
-    </Container>
+    </div>
   )
 }
 

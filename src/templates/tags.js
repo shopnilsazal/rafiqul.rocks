@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import { Container } from 'react-responsive-grid'
+import Menu from '../components/Menu'
 import { rhythm } from '../utils/typography'
 import PostListItem from '../components/PostListItem'
 import Tags from '../components/Tags'
@@ -10,12 +10,14 @@ export default function TagsTemplate({ pathContext }) {
   const { posts, post, tag, tags } = pathContext
   if (tag) {
     return (
-      <Container
+      <div
         style={{
           maxWidth: rhythm(28),
           padding: `0 ${rhythm(3 / 4)} ${rhythm(1.5)}`,
+          margin: '0 auto',
         }}
       >
+        <Menu />
         <Helmet title={`${tag} | Rafiqul's Blog`} />
         <h1>
           {post.length} post{post.length === 1 ? '' : 's'} tagged with {tag}
@@ -37,8 +39,6 @@ export default function TagsTemplate({ pathContext }) {
         </Link>
 
         {post.map(({ excerpt, fields, frontmatter, timeToRead }) => {
-          console.log(frontmatter)
-          console.log(fields)
           return (
             <PostListItem
               key={fields.slug}
@@ -51,21 +51,23 @@ export default function TagsTemplate({ pathContext }) {
             />
           )
         })}
-      </Container>
+      </div>
     )
   }
   return (
-    <Container
+    <div
       style={{
         maxWidth: rhythm(28),
         padding: `0 ${rhythm(3 / 4)} ${rhythm(1.5)}`,
         textAlign: 'center',
+        margin: '0 auto',
       }}
       className="all-tags-container"
     >
+      <Menu />
       <Helmet title={`Tags | Rafiqul's Blog`} />
       <h1 style={{ marginBottom: '3rem' }}>All tags</h1>
       <Tags tags={tags} />
-    </Container>
+    </div>
   )
 }

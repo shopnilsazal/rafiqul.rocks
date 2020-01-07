@@ -6,8 +6,8 @@ import { rhythm } from '../utils/typography'
 import PostListItem from '../components/PostListItem'
 import Tags from '../components/Tags'
 
-export default function TagsTemplate({ pathContext }) {
-  const { posts, post, tag, tags } = pathContext
+export default function TagsTemplate({ pageContext }) {
+  const { posts, post, tag, tags } = pageContext
   if (tag) {
     return (
       <div

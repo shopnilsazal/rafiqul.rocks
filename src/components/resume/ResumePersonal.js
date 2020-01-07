@@ -6,7 +6,7 @@ const ResumePersonal = () => (
     <img src={Avater} alt="profile picture" />
     <div className="name-title">
       <h1>Rafiqul Hasan</h1>
-      <strong className="position">Software Artisan</strong>
+      <strong className="position">Software Engineer</strong>
     </div>
   </div>
 )

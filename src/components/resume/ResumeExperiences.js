@@ -13,15 +13,26 @@ const ResumeExperiences = () => (
         </a>
       </span>
       <span className="text">
-        - Architecting and implementing both back-end and front-end of{' '}
-        <a href="https://beshijoss.com/" target="_blank">
-          BeshiJoss
+        - Redesigned the conversational chatbot building platform{' '}
+        <a href="https://getalice.ai/" target="_blank">
+          Alice
+        </a>{' '}
+        with maintainable low level architecture and transformed it from B2B to
+        SAAS. And lead this team of 7 people. <br />- Designed and developed
+        both back-end and front-end architecture of{' '}
+        <a href="https://kichole.com/" target="_blank">
+          Ki Chole?
         </a>
-        , an online entertainment and event ticketing platform. <br />
-        - Implementing new features to existing applications.
+        , an online entertainment and event ticketing platform.
+        <br />
+        - Designed and implemented HTTP based backend system for health tracking
+        IoT device.
         <br />- <strong>Technologies:</strong> <code>Go</code>,{' '}
-        <code>Echo Framework</code>, <code>ReactJS</code>, <code>Python</code>,{' '}
-        <code>Django</code>, <code>PostgreSQL</code>
+        <code>Echo Framework</code>, <code>ReactJS</code>, <code>Redux</code>,{' '}
+        <code>Python</code>, <code>Django</code>, <code>Flask</code>,{' '}
+        <code>FastAPI</code>, <code>Docker</code>, <code>Traefik</code>,{' '}
+        <code>AWS</code>, <code>Redis</code>, <code>MongoDB</code>,{' '}
+        <code>PostgreSQL</code>
       </span>
     </div>
 
@@ -37,19 +48,18 @@ const ResumeExperiences = () => (
         </a>
       </span>
       <span className="text">
-        - Designing and developing highly scalable backend system for IoT
-        devices. <br />- Designing and developing real-time communication system
-        with
-        <code> WebSocket</code>.
-        <br />
-        - Lead a team of 4 and mentor junior developers. <br />- Developing new
-        user dashboard for better user experience in
-        <code> ReactJS </code>
-        and <code> Redux</code>. <br />- <strong>Technologies:</strong>{' '}
-        <code>Python</code>, <code>Flask</code>, <code>Sanic</code>,{' '}
-        <code>Celery</code>, <code>Twisted</code>, <code>Tornado</code>,{' '}
-        <code>ReactJS</code>, <code>Redux</code>, <code>Redis</code>,{' '}
-        <code>MongoDB</code>
+        - Redesigned the notification system with Event Driven Architecture and
+        reduced the trigger time from 3 minutes to near real time.
+        <br />- Redesigned TCP backend system for location tracking IoT device
+        and improved open connection up to 80%.
+        <br />- Implemented a POC of Real Time video streaming system with{' '}
+        <code>RTMP</code>. <br />- Implemented a POC of Real Time location
+        tracking system with <code>WebSocket</code>.
+        <br />- Lead a team of 4 and mentor junior developers.
+        <br />- <strong>Technologies:</strong> <code>Python</code>,{' '}
+        <code>Flask</code>, <code>Sanic</code>, <code>Celery</code>,{' '}
+        <code>Twisted</code>, <code>Tornado</code>, <code>ReactJS</code>,{' '}
+        <code>Redux</code>, <code>Redis</code>, <code>MongoDB</code>
       </span>
     </div>
 

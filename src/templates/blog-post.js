@@ -8,9 +8,9 @@ import { rhythm } from '../utils/typography'
 import SEO from '../components/SEO'
 import '../scss/prism-theme.scss'
 
-const BlogPost = ({ data = {}, location, pathContext }) => {
+const BlogPost = ({ data = {}, location, pageContext }) => {
   const { markdownRemark: post } = data
-  const { next, prev } = pathContext
+  const { next, prev } = pageContext
 
   const description = post.excerpt
   const author = data.site.siteMetadata.author
